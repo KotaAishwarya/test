@@ -1,0 +1,87 @@
+<!-- html forms -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>This is Html forms tutorial</h2>
+    <form action="backend.php">
+        <!-- div tag its used to bring a division-->
+        <!-- this for= and id must be same -->
+        <label for="name">Name</label>
+        <div>
+            <input type="text" name="myName"
+                id="name"><!--this input tag is an inline element ,span is an inline element and div is a block element-->
+            <!-- here we are avoiding the br tag its not recommended-->
+        </div>
+        <br>
+        <div>
+            Role: <input type="text" name="myRole">
+
+        </div>
+        <br>
+        <div>
+            <!-- use input:em to get tag -->
+            Email: <input type="email" name="myEmail"><!--here name means is what your backend will recognise this by-->
+        </div>
+        <br>
+        <div>
+            Date: <input type="date" name="myDate">
+        </div>
+        <!-- if we want to write 10 to the power of 3 then we can type10e3 ex:43e2 in bonus . only e(accepted) will work no other letters -->
+        <!--we can enter  e and numbers in type=number -->
+        <br>
+        <div>
+            Bonus: <input type="number" name="myBonus">
+        </div>
+        <br>
+        <div>
+            Are you eligible?: <input type="checkbox" name="myEligibility" checked>
+        </div>
+        <!-- its checked by default -->
+        <br>
+        <label for="eligibile">Are you eligible?</label>
+        <div>
+            <input type="checkbox" name="myEligibility" id="eligibile">
+        </div>
+        <br>
+        <!-- radio button used to select only one from all -->
+        <!-- if you give the same name to checkboxes only one can be chosen-->
+        <div>
+            Gender: Male<input type="radio" name="myGender"> Female<input type="radio" name="myGender"> other<input
+                type="radio" name="myGender">
+        </div>
+        <br>
+        <!-- text area is an tag/element .to take big paragraphs of inputs from users-->
+        <div>
+            Write about yourself: <br><textarea name="myText" cols="60" rows="10"></textarea>
+        </div>
+        <!-- type input:submit to submit the form to backend-->
+        <br>
+        <div>
+            <label for="car">Car</label>
+            <select name="myCar" id="car">
+                <option value="ind">Indica</option>
+                <!-- if we want to select one as by default then use selected -->
+                <option value="ind" selected>Indra</option>
+                <option value="swf">Swift</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Now">
+            <!-- submit means it willl go to the bckend-->
+            <input type="reset" value="Reset Now"><!--to reset the form . it will go  blank-->
+        </div>
+
+    </form><!--this action attribute in form will submit this below data to the specifed one ex:backend.php-->
+    <!-- input tag means user will give the input may be text,button,checkbok,date,time,email,ect-->
+    <!-- after filling this details if we click on the submit button this data will redirected to backend.php-->
+</body>
+
+</html>
